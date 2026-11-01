@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "NoShortsThere!",
+  "version": "1.0.0",
+  "description": "Скрывает YouTube Shorts из рекомендаций, поиска и меню.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "browser_specific_settings": {
+    "safari": {
+      "strict_min_version": "15.4"
+    }
+  }
+}

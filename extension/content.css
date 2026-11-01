@@ -1,0 +1,27 @@
+/*
+ * Только простые селекторы (тег / атрибут), без :has() — браузер
+ * проверяет их почти бесплатно. Всё, что требует проверки содержимого,
+ * делает content.js и помечает элемент атрибутом data-nst-hidden.
+ */
+
+/* Элементы, помеченные скриптом */
+[data-nst-hidden] {
+  display: none !important;
+}
+
+/* Полки Shorts (десктоп и мобильная версия) — прячем сразу, без мигания */
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts],
+ytm-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Пункт Shorts в свёрнутом боковом меню */
+ytd-mini-guide-entry-renderer[aria-label="Shorts"] {
+  display: none !important;
+}
+
+/* Вкладка Shorts на странице канала */
+yt-tab-shape[tab-title="Shorts"] {
+  display: none !important;
+}

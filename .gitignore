@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcarchive
+
+# Сборки и архивы расширения
+dist/
+*.zip
+
+# Node (если появится сборка/линтер)
+node_modules/
+npm-debug.log*
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+
+# Локальные секреты
+.env
+.env.*
+
+# Личные настройки сборки (bundle ID, команда разработчика)
+local.env
